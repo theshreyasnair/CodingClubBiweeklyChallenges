@@ -30,7 +30,7 @@ while True:
   elif(option.lower() == "balance"):
     acc.return_account_details()
   elif(option.lower() == "withdraw"):
-    if(acc.balance < 0):
+    if(acc.balance == 0):
       print("You have no money to withdraw")
     else:
       withdraw = int(input("Enter an ammount to withdraw: "))
